@@ -1,0 +1,232 @@
+.slider
+    height: 1442px
+    position: relative
+    
+    .slider-imageBlock
+        height: 787px
+        background-color: #f7f7f7
+        display: flex
+        justify-content: space-between
+        align-items: center
+        
+        .slider-pagination
+            width: 47px
+            height: 47px
+            background-color: #d8d8d8
+            text-align: center
+            
+            .fa-chevron-left
+                color: #ffffff
+                padding-top: 15px
+                
+            .fa-chevron-right
+                color: #ffffff
+                padding-top: 15px
+            
+            &:hover
+                box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+                
+    
+    .slider-textBlock
+        height: 730px
+        width: 1151px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+        position: absolute
+        top: 711px
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        
+        h4
+            color: #f16d7f
+            font-size: 14px
+            font-weight: 700
+            line-height: 24px
+            text-transform: uppercase
+            margin-top: 73px
+            
+        .pagination-block
+            width: 147px
+            height: 1px
+            background-color: #eaeaea
+            margin-top: 15px
+            
+        h2
+            color: #4d4d4d
+            font-size: 18px
+            font-weight: 700
+            line-height: 24px
+            text-transform: uppercase
+            margin-top: 17px
+        
+        .slider-description
+            width: 618px
+            height: 60px
+            color: #5e5e5e
+            font-size: 14px
+            font-weight: 300
+            line-height: 24px
+            text-align: center
+            margin-top: 67px
+            
+        .material-designer
+            width: 344px
+            height: 11px
+            color: #b9b9b9
+            font-size: 14px
+            font-weight: 700
+            line-height: 24px
+            text-transform: uppercase
+            display: flex
+            justify-content: space-between
+            margin-top: 28px
+            
+            span
+                color: #2f2f2f
+        
+        .price
+            color: #ef5b70
+            font-size: 24px
+            font-weight: 700
+            line-height: 24px
+            margin-top: 37px
+            
+        .textBlock-line
+            width: 642px
+            height: 1px
+            background-color: #eaeaea
+            margin-top: 43px
+            
+        .textBlock-input
+            width: 538px
+            height: 79px
+            display: flex
+            justify-content: space-between
+            margin-top: 63px
+            
+            .input-text
+                color: #2f2f2f
+                font-size: 14px
+                font-weight: 700
+                line-height: 24px
+                text-transform: uppercase
+                margin-bottom: 16px
+            
+            .slider-input
+                width: 144px
+                height: 35px
+                border: 1px solid #eaeaea
+                padding-left: 10px
+                outline: none
+            
+        .slider-button
+            margin-top: 28px
+            
+            button
+                width: 537px
+                height: 55px
+                border: 1px solid #ef5b70
+                background-color: #ffffff
+                color: #ef5b70
+                font-size: 16px
+                font-weight: 700
+                text-align: center
+                display: flex
+                justify-content: center
+                align-items: center
+                
+                img
+                    padding-right: 15px
+                
+                &:hover
+                    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.36)
+
+.also-like
+    height: 527px
+    position: relative
+    
+    h2
+        color: #4d4d4d;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+        text-align: center
+        margin-top: 119px
+        
+    .alsoItems
+        margin-top: 72px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    .alsoItem
+        width: 264px
+        height: 370px
+    
+        &:hover
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+        
+            .alsoBuy
+                display: flex
+                justify-content: center
+                align-items: center
+    
+            &:nth-child(n+5)
+                margin-top: 27px
+
+    .alsoImgWrap
+        height: 280px
+        position: relative
+
+    .alsoBuy
+        height: inherit
+        width: 100%
+        background: rgba(0, 0, 0, 0.5)
+        display: none
+        position: absolute
+    
+    button
+        padding: 15px
+        border: 1px solid #ffffff
+        background: none
+        color: white
+        font-size: 13px
+        font-weight: 700
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        
+        img
+            margin-right: 10px
+
+    .alsoProduct
+        width: 100%
+        display: block
+        height: inherit
+        object-fit: cover
+        object-position: center center
+
+    .alsoNameAndPrice
+        padding: 15px
+
+    .alsoItemName
+        margin-bottom: 15px
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        max-height: 2.4em
+        overflow: hidden
+
+    .alsoItemPrice
+        color: #f16d7f
+        font-size: 16px
+        font-weight: 500
+        text-transform: uppercase
