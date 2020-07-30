@@ -7,7 +7,7 @@
     width: 165px
     line-height: 51px
     text-decoration: none
-    color: #222222
+    color: $totalBlack
     text-transform: uppercase
     background: url(../img/Group_2.svg) no-repeat
     background-blend-mode: overlay
@@ -15,7 +15,7 @@
     padding-left: 72px
         
     span
-        color: #f16d7f
+        color: $mainTheme
         font-weight: 700
         
 .header
@@ -43,9 +43,10 @@
             background: none
             padding: 12px
             color: #acacac
+            transition: .5s
 
             &:hover
-                background-color: #cccccc
+                background-color: #e3e3e3
 
 .search_browse
     padding: 14px
@@ -54,9 +55,10 @@
     border: none
     color: #7c7c7c
     outline: none
+    transition: .5s
         
     &:hover
-        background-color: #cccccc 
+        background-color: #e3e3e3 
     i
         color: #838383 
 
@@ -71,8 +73,8 @@
 .header-account
     width: 130px
     height: 38px
-    background-color: #f16d7f
-    color: #ffffff
+    background-color: $mainTheme
+    color: $totalWhite
     padding-left: 5px
     font-size: 15px
     font-weight: 400
@@ -90,7 +92,7 @@
     display: block
     width: inherit
     height: 3px
-    background-color: #ffffff;
+    background-color: $totalWhite
     margin-top: 17px;
     margin-bottom: -16px
 
@@ -105,8 +107,9 @@
     a
         text-transform: uppercase
         text-decoration: none
-        color: #222222
+        color: $totalBlack
         position: relative
+        transition: 1s
         
         &:hover
             .menu-hover
