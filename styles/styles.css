@@ -56,9 +56,10 @@ body {
     height: inherit;
     background: none;
     padding: 12px;
-    color: #acacac; }
+    color: #acacac;
+    transition: .5s; }
     .header .search button:last-child:hover {
-      background-color: #cccccc; }
+      background-color: #e3e3e3; }
 
 .search_browse {
   padding: 14px;
@@ -66,9 +67,10 @@ body {
   line-height: 38px;
   border: none;
   color: #7c7c7c;
-  outline: none; }
+  outline: none;
+  transition: .5s; }
   .search_browse:hover {
-    background-color: #cccccc; }
+    background-color: #e3e3e3; }
   .search_browse i {
     color: #838383; }
 
@@ -114,7 +116,8 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #222222;
-    position: relative; }
+    position: relative;
+    transition: 1s; }
     .main-menu a:hover .menu-hover {
       background-color: #ef5b70; }
   .main-menu a:not(:last-child) {
@@ -459,7 +462,8 @@ body {
   .cart-detailsMore input {
     width: 54px;
     height: 30px;
-    text-align: center; }
+    text-align: center;
+    outline: none; }
 
 .cart-buttons {
   position: relative;
@@ -808,6 +812,176 @@ body {
     font-weight: 500;
     text-transform: uppercase; }
 
+.accordion-block {
+  height: 1050px;
+  position: relative;
+  margin-top: 70px; }
+  .accordion-block .horizontal-click [name="vkl"] {
+    display: none; }
+  .accordion-block .horizontal-click > :not(input):not(label) {
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0 35px;
+    border-top-style: none;
+    transition: .3s; }
+  .accordion-block .horizontal-click > label {
+    overflow: hidden;
+    display: block;
+    padding: 33px 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8; }
+  .accordion-block .horizontal-click > :checked + label + * {
+    overflow: auto;
+    height: 422px;
+    border-bottom: 1px solid #e8e8e8; }
+  .accordion-block .horizontal-click > :checked + label {
+    cursor: default;
+    border-bottom: none; }
+  .accordion-block .horizontal-click .shippingAdress {
+    display: flex; }
+    .accordion-block .horizontal-click .shippingAdress .register-form {
+      display: flex;
+      flex-direction: column; }
+      .accordion-block .horizontal-click .shippingAdress .register-form h3 {
+        color: #222222;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-bottom: 15px; }
+      .accordion-block .horizontal-click .shippingAdress .register-form .register-text1 {
+        color: #b3b2b2;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-bottom: 34px; }
+      .accordion-block .horizontal-click .shippingAdress .register-form .checkout-text2 {
+        color: #b3b2b2;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 29px; }
+      .accordion-block .horizontal-click .shippingAdress .register-form button {
+        width: 180px;
+        height: 50px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+        color: #4a4a4a;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 38px;
+        transition: .3s; }
+        .accordion-block .horizontal-click .shippingAdress .register-form button:hover {
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16); }
+      .accordion-block .horizontal-click .shippingAdress .register-form label {
+        color: #222222;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-bottom: 20px; }
+        .accordion-block .horizontal-click .shippingAdress .register-form label span {
+          padding-left: 14px; }
+        .accordion-block .horizontal-click .shippingAdress .register-form label input[type="radio"] {
+          position: relative;
+          height: 14px;
+          width: 14px;
+          appearance: none;
+          outline: none; }
+          .accordion-block .horizontal-click .shippingAdress .register-form label input[type="radio"]::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 2px solid #555555; }
+          .accordion-block .horizontal-click .shippingAdress .register-form label input[type="radio"]:checked::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #000000;
+            transform: translate(-50%, -50%);
+            visibility: visible; }
+    .accordion-block .horizontal-click .shippingAdress .login-form {
+      margin-left: 291px; }
+      .accordion-block .horizontal-click .shippingAdress .login-form h3 {
+        color: #222222;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-bottom: 15px; }
+      .accordion-block .horizontal-click .shippingAdress .login-form p {
+        color: #b3b2b2;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-bottom: 4px; }
+      .accordion-block .horizontal-click .shippingAdress .login-form .login-emailPass {
+        color: #222222;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding-top: 23px;
+        padding-bottom: 10px; }
+        .accordion-block .horizontal-click .shippingAdress .login-form .login-emailPass span {
+          color: #ff0d0d;
+          font-family: Lato;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 20px; }
+      .accordion-block .horizontal-click .shippingAdress .login-form input {
+        width: 360px;
+        height: 45px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+        outline: none;
+        padding-left: 30px; }
+      .accordion-block .horizontal-click .shippingAdress .login-form .required {
+        color: #ff0d0d;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-top: 22px;
+        padding-bottom: 32px; }
+      .accordion-block .horizontal-click .shippingAdress .login-form button {
+        width: 180px;
+        height: 50px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+        color: #4a4a4a;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        outline: none;
+        transition: .3s; }
+        .accordion-block .horizontal-click .shippingAdress .login-form button:hover {
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16); }
+      .accordion-block .horizontal-click .shippingAdress .login-form a {
+        color: #222222;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-decoration: none;
+        margin-left: 32px;
+        transition: color .3s; }
+        .accordion-block .horizontal-click .shippingAdress .login-form a:hover {
+          color: #f16d7f; }
+
 .subscribe {
   height: 438px;
   position: relative; }
@@ -1003,7 +1177,7 @@ body {
       display: flex;
       justify-content: space-between; }
       .footer-bottom .footer-bottomContent .social-links a {
-        color: #ffffff;
+        color: #db95a3;
         font-size: 32px;
         display: block;
         transition: color .3s; }

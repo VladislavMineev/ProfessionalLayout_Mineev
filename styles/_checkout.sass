@@ -1,0 +1,200 @@
+.accordion-block
+    height: 1050px
+    position: relative
+    margin-top: 70px
+    
+    .horizontal-click [name="vkl"]
+        display: none
+        
+    .horizontal-click
+        &> :not(input):not(label)
+            overflow: hidden;
+            height: 0
+            margin: 0
+            padding: 0 35px
+            border-top-style: none
+            transition: .3s
+                
+        &> label
+            overflow: hidden
+            display: block
+            padding: 33px 0px
+            white-space: nowrap
+            text-overflow: ellipsis
+            cursor: pointer
+            color: $totalBlack
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            border-bottom: 1px solid #e8e8e8
+        
+        &> :checked + label + * 
+            overflow: auto
+            height: 422px
+            border-bottom: 1px solid #e8e8e8
+
+        &> :checked + label
+            cursor: default
+            border-bottom: none
+        
+        .shippingAdress
+            display: flex
+            
+            .register-form
+                display: flex
+                flex-direction: column
+                
+                h3
+                    color: $totalBlack
+                    font-size: 13px
+                    font-weight: 400
+                    text-transform: uppercase
+                    padding-bottom: 15px
+
+                .register-text1
+                    color: $checkoutText
+                    font-size: 13px
+                    font-weight: 400
+                    line-height: 20px
+                    padding-bottom: 34px
+
+                .checkout-text2
+                    color: $checkoutText
+                    font-size: 13px
+                    font-weight: 400
+                    line-height: 29px
+                    
+                button
+                    width: 180px
+                    height: 50px
+                    border: 1px solid $borderGrey
+                    background-color: #ffffff
+                    color: $buttonGrey
+                    font-size: 14px
+                    font-weight: 700
+                    text-transform: uppercase
+                    margin-top: 38px
+                    transition: .3s
+                    
+                    &:hover
+                        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+                    
+                label
+                    color: $totalBlack
+                    font-size: 12px
+                    font-weight: 400
+                    text-transform: uppercase
+                    padding-bottom: 20px
+                    
+                    span
+                        padding-left: 14px
+                    
+                    input[type="radio"]
+                        position: relative
+                        height: 14px
+                        width: 14px
+                        appearance: none
+                        outline: none
+                        
+                        &::before
+                            content: ''
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            width: 14px
+                            height: 14px
+                            border-radius: 50%
+                            transform: translate(-50%, -50%)
+                            background-color: white
+                            border: 2px solid #555555
+                        
+                        &:checked::after
+                            content: ''
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            width: 6px
+                            height: 6px
+                            border-radius: 50%
+                            background-color: #000000
+                            transform: translate(-50%, -50%)
+                            visibility: visible
+                        
+            .login-form
+                margin-left: 291px
+                
+                h3
+                    color: $totalBlack
+                    font-size: 13px
+                    font-weight: 400
+                    text-transform: uppercase
+                    padding-bottom: 15px
+                
+                p
+                    color: $checkoutText
+                    font-family: Lato
+                    font-size: 13px
+                    font-weight: 400
+                    line-height: 20px
+                    padding-bottom: 4px
+                    
+                .login-emailPass
+                    color: $totalBlack
+                    font-size: 12px
+                    font-weight: 400
+                    line-height: 20px
+                    text-transform: uppercase
+                    padding-top: 23px
+                    padding-bottom: 10px
+                    
+                    span
+                        color: #ff0d0d
+                        font-family: Lato
+                        font-size: 17px
+                        font-weight: 400
+                        line-height: 20px
+                
+                input
+                    width: 360px
+                    height: 45px
+                    border: 1px solid $borderGrey
+                    background-color: #ffffff
+                    outline: none
+                    padding-left: 30px
+                    
+                .required
+                    color: #ff0d0d
+                    font-size: 13px
+                    font-weight: 400
+                    line-height: 20px
+                    padding-top: 22px
+                    padding-bottom: 32px
+                
+                button
+                    width: 180px
+                    height: 50px
+                    border: 1px solid $borderGrey
+                    background-color: $totalWhite
+                    color: $buttonGrey
+                    font-size: 14px
+                    font-weight: 700
+                    text-transform: uppercase
+                    outline: none
+                    transition: .3s
+                    
+                    &:hover
+                        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+                    
+                a
+                    color: $totalBlack
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 20px
+                    text-decoration: none
+                    margin-left: 32px
+                    transition: color .3s
+                
+                    &:hover
+                        color: $mainTheme
+                        
+                    
