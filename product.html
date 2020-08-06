@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.13.1/js/all.js" integrity="sha384-heKROmDHlJdBb+n64p+i+wLplNYUZPaZmp2HZ4J6KCqzmd33FJ8QClrOV3IdHZm5" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-panel container">
+            <a href="#" class="header-logo">Bran<span>d</span></a>
+            <form method="get" class="search">
+                <button class="search_browse">Browse <i class="fas fa-caret-down"></i></button>
+                <input type="text" name="search" placeholder="Search for Item...">
+                <button><i class="fas fa-search"></i></button>
+            </form> <img class="header-cart" src="img/Forma_1.svg" alt="cart">
+            <button name="account-bar" class="header-account">My Account <i class="fas fa-caret-down"></i></button>
+        </div>
+        <div class="header-line"></div>
+        <nav class="main-menu">
+            <a href="#">Main<div class="menu-hover"></div></a>
+            <a href="#">Man<div class="menu-hover"></div></a>
+            <a href="#">Women<div class="menu-hover"></div></a>
+            <a href="#">Kids<div class="menu-hover"></div></a>
+            <a href="#">accessories<div class="menu-hover"></div></a>
+            <a href="#">Featured<div class="menu-hover"></div></a>
+            <a href="#">Hot Deals<div class="menu-hover"></div></a>
+        </nav>
+    </header>
+    <div class="new-arrivals">
+        <div class="new-arrivalsContent container">
+            <h2>New Arrivals </h2>
+            <p>Home / Men / <span>New Arrivals</span></p>
+        </div>
+    </div>
+    <main class="product-main container">
+        <ul>
+            <li class="dropdown">
+              <input type="checkbox" checked="checked" />
+              <a href="#" data-toggle="dropdown" class="prodNav-active">Category</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Hoodies & Sweatshirts</a>
+                <li><a href="#">Jackets & Coats</a></li>
+                <li><a href="#">Pants</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">Shirts</a><li><a href="#">Shoes</a></li>
+                <li><a href="#">Shorts</a></li>
+                <li><a href="#">Sweaters & Knits</a></li>
+                <li><a href="#">T-Shirts</a>
+                <li><a href="#">Tanks</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <input type="checkbox" />
+              <a href="#" data-toggle="dropdown">BRAND</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <input type="checkbox" />
+              <a href="#" data-toggle="dropdown">dESIGNER</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+              </ul>
+            </li>
+        </ul>
+        <div class="product-blocks container">
+            <div class="advanced-search">
+                <div class="trending-now">
+                    <h4>Trending now</h4>
+                    <p>
+                    <a href="#">Bohemian</a>
+                    <span>|</span>
+                    <a href="#">Floral</a>
+                    <span>|</span>
+                    <a href="#">Lace</a> 
+                    </p>
+                    <p>
+                    <a href="#">Floral</a>
+                    <span>|</span>
+                    <a href="#">Lace</a>
+                    <span>|</span>
+                    <a href="#">Bohemian</a>
+                    </p>
+                </div>
+                <div class="product-size">
+                    <h4>Size</h4>
+                    <div class="size-input">
+                        <p><input type="checkbox">XXS</p>
+                        <p><input type="checkbox">XS</p>
+                        <p><input type="checkbox">S</p>
+                        <p><input type="checkbox">M</p>
+                        <p><input type="checkbox">L</p>
+                        <p><input type="checkbox">XL</p>
+                        <p><input type="checkbox">XXL</p>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <h4>pRICE</h4>
+                    <form oninput="result.value=parseInt(b.value)">
+                    <input type="range" name="b" value="50"> 
+                    <output name="result">50$</output>
+                    </form>
+                    ТУТ БУДЕТ СЛАЙДЕР НА JS
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
